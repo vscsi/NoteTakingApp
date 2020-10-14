@@ -1,0 +1,18 @@
+
+<%- include('./includes/head.ejs') %>
+</head>
+
+<body>
+<%- include('./includes/nav.ejs') %>
+
+    <main>
+        <form  class="form-group" action="/add-note" method="POST">
+            <div class="form-group" >
+                <label for="add-note">Add your note here</label>
+                <textarea class="form-control"  type="text" name="notes" id="notes" rows="3"></textarea>
+            </div>
+
+            <button class="btn" type="submit">Add note</button>
+        </form>
+    </main>
+<%- include('./includes/end.ejs') %>
